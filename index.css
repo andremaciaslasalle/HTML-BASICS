@@ -1,0 +1,29 @@
+body{
+    background: rgb(218, 248, 250);
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 70px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background: white;
+}
+
+.main-container {
+    padding: 25px 50px 50px 50px;
+    height: 100%;
+}
+
+.volver {
+    margin-top: 25px;
+}
