@@ -24,6 +24,10 @@ a {
     height: 100%;
 }
 
+.card{
+    margin-bottom: 15px;
+}
+
 .volver {
-    margin-top: 25px;
+    margin-top: 15px;
 }
