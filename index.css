@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+table, th, td {
+    border: 1px solid black;
+    width:100%;
+}
+
 .container {
     background: white;
 }
@@ -39,3 +44,4 @@ a {
 .p-linea{
     background: yellow;
 }
+
