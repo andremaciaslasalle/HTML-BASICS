@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/APPLE.ico" type="image/x-icon">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../index.css">
+    <title>Etiquetas formularios</title>
+</head>
+
+<body>
+    <div class="container main-container">
+        <h1>Etiquetas formularios</h1>
+        <hr>
+        <div class="container">
+            <!--La etiqueta address le da semántica a poner direcciones.
+    <address>
+        Contáctame a: <a href="mailto:andremacias@lasallistas.org.mx">andre.macias@lasallistas.org.mx</a><br>
+        Mutualismo #79 Int. 203 <br>
+        Teléfono: 55 30336 6889 <br>
+    </address> <hr>-->
+
+            <form action="">
+                <fieldset>
+                    <legend>Información básica</legend>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <input type="text" name="apPat" id="apPat" placeholder="Apellido Paterno">
+                    <input type="text" name="apMat" id="apMat" placeholder="Apellido Materno">
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <legend>Datos de Salud</legend>
+                    <input type="text" name="tipoSangre" id="tipoSangre" placeholder="Tipo sanguíneo">
+                    <input type="number" name="peso" id="peso" placeholder="peso" min="10" max="500" required>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <legend>Información Profesional</legend>
+                    <select name="universidad" id="universidad">
+                        <optgroup label="PÚBLICA">
+                            <option value="UNAM">UNAM</option>
+                            <option value="IPN">IPN</option>
+                            <option value="UAM">UAM</option>
+                        </optgroup>
+                        <optgroup label="PRIVADA">
+                            <option value="LA SALLE">LA SALLE</option>
+                            <option value="ITESM">ITESM</option>
+                            <option value="ANÁHUAC">ANÁHUAC</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+                    <label>Selecciona una carrera: </label>
+                    <input list="carrera">
+                    <datalist id="carrera">
+                        <option value="ING. CIBERNÉTICA"></option>
+                        <option value="ING. MECÁNICA"></option>
+                        <option value="CONTABILIDAD"></option>
+                        <option value="ACTUARÍA"></option>
+                        <option value="MEDICINA"></option>
+                        <option value="DERECHO"></option>
+                    </datalist>
+                </fieldset>
+                <hr>
+            </form>
+            <h2 contenteditable="true">Hola mundo soy André y soy editable</h2>
+            <hr>
+        </div>
+        <a class="btn btn-light volver" href="../index.html">Página Principal</a>
+    </div>
+</body>
+
+</html>
