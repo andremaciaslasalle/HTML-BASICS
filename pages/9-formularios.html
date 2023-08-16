@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/APPLE.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <div class="container main-container">
+        <h1>Formularios</h1>
+        <hr>
+        <div class="container">
+            <form>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br><br>
+                <input type="number" name="edad" id="edad" placeholder="Edad" max="120" required><br><br>
+                <input type="number" name="altura" id="altura" placeholder="Altura en cm" required min="100"><br><br>
+                <input type="text" name="sexo" id="sexo" placeholder="Sexo"><br><br>
+                <input type="email" name="email" id="email" required placeholder="Email"><br><br>
+                <h6>Selecciona tu país: </h6>
+                <select name="pais" id="pais">
+                    <option selected value="Mexico">Mexico</option>
+                    <option value="España">España</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Otro">Otro</option>
+                </select><br><br>
+                <h6>Selecciona tu turno: </h6>
+                <label><input type="radio" name="turno">Matutino</label>
+                <label><input type="radio" name="turno">Vespertino</label>
+                <label><input type="radio" name=turno>Mixto</label><br><br>
+                <h6>Acepta términos y condiciones</h6>
+                <label><input type="checkbox" name="terminoscond">Acepto términos y condiciones</label><br><br>
+                <h6>Agrega comentarios </h6>
+                <textarea name="" id="" cols="45" rows="15"></textarea><br><br>
+                <input class="btn btn-outline-primary" type="reset" value="Borrar">
+                <input class="btn btn-outline-primary" type="submit" value="Enviar">
+            </form>
+        </div>
+        <a class="btn btn-light volver" href="../index.html">Página Principal</a>
+    </div>
+</body>
+</html>
